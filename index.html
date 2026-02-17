@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>STEM IT Lab Extension LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<header class="card">
+  <h1>STEM IT Extension Lab</h1>
+  <h3>Ed.Tech</h3>
+  <h2>STEM Real World IT Lab Extension</h2>
+  <p>
+    The STEM real-world IT lab is an environment for an IT platform providing students
+    networking tools, mentorship, planning, designing, building, launching and selling to business platforms.
+  </p>
+
+  <div class="buttons">
+    <button onclick="scrollToContact()">Collaborate</button>
+    <button onclick="scrollToArticles()">Articles</button>
+  </div>
+</header>
+
+<section class="card">
+  <h2>World of Business</h2>
+
+  <div class="project">
+    <h3>Student STEM Lab Industry</h3>
+    <p>Students learn, develop, launch and showcase industry-based projects.</p>
+  </div>
+
+  <div class="project">
+    <h3>CoDeers</h3>
+    <p>Technology-focused events, workshops, hackathons and networking meetups.</p>
+  </div>
+
+  <div class="project">
+    <h3>Real-World Technology Environment</h3>
+    <p>Innovation hub transforming ideas into impactful solutions.</p>
+  </div>
+</section>
+
+<section class="card toolkit">
+  <h2>Toolkit</h2>
+  <div class="grid">
+    <div>⚛ Science Lab Tools</div>
+    <div>🖥 Technology Tools</div>
+    <div>🔧 Engineering Tools</div>
+    <div>∑ Mathematics Tools</div>
+    <div>🤖 AI & Robotics</div>
+    <div>📊 Algorithms & Projects</div>
+  </div>
+</section>
+
+<section class="card testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonial">
+    “Exceptional technical skills and attention to detail.”
+  </div>
+  <div class="testimonial">
+    “Professional and results-driven.”
+  </div>
+</section>
+
+<section class="card" id="articles">
+  <h2>Articles</h2>
+  <div id="articleList"></div>
+  <button onclick="openModal()">Add Article</button>
+</section>
+
+<section class="card" id="contact">
+  <h2>Collaborate</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer class="card footer">
+  © 2026 STEM IT Lab Extension, LLC. All Rights Reserved.
+</footer>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h3>Add Article</h3>
+    <input type="text" id="articleTitle" placeholder="Title">
+    <textarea id="articleDesc" placeholder="Description"></textarea>
+    <button onclick="addArticle()">Add</button>
+    <button onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
